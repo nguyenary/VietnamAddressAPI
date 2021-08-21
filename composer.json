@@ -1,6 +1,6 @@
 {
   "name": "nguyenary/vietnam-address-api",
-  "description": "Một packagist được phát triển bằng PHP để lấy thông tin đơn vị hành chính Việt Nam (Gồm tỉnh, thành phố, quận, huyện, xã, phường, thị trấn...)",
+  "description": "Một thư viện được viết bằng PHP để lấy thông tin các đơn vị hành chính Việt Nam (Tỉnh, Thành Phố, Quận, Huyện, Xã, Phường, Thị Trấn...)",
   "require": {
     "php": ">=7.2"
   },
