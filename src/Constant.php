@@ -5,7 +5,7 @@ namespace NguyenAry\VietnamAddressAPI;
 class Constant
 {
     // Path of folder data
-    const PATH_FOLDER = 'src/data';
+    const PATH_FOLDER = __DIR__ . '/data';
 
     // Path of province list
     const PATH_PROVINCES = self::PATH_FOLDER . '/province.json';
