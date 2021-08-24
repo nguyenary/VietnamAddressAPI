@@ -15,7 +15,7 @@ use NguyenAry\VietnamAddressAPI\Address;
 
 Xem ví dụ cụ thể tham khảo file `example.php`
 
-#### ***`Address::getProvince()`***
+#### ***`Address::getProvinces()`***
 > Lấy tất cả Tỉnh / Thành Phố của Việt Nam
 - Option: 
     - province_ids (array) : Mảng chứa danh sách province_id muốn lấy
