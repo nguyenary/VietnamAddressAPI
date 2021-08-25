@@ -11,7 +11,7 @@ class ReadData
      * @return array
      * @throws Exception
      */
-    public static function read(string $path) : array
+    public static function read(string $path): ?array
     {
         if (!file_exists($path)) {
             throw new Exception('File path not exist');
@@ -25,7 +25,7 @@ class ReadData
      * @return array
      * @throws Exception
      */
-    private static function jsonToArray(string $data) :array
+    private static function jsonToArray(string $data): ?array
     {
         $data = json_decode($data, true);
 

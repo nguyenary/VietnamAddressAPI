@@ -2,8 +2,6 @@
 
 namespace NguyenAry\VietnamAddressAPI;
 
-use Exception;
-
 class Address
 {
     private static $schema = [];
@@ -12,9 +10,8 @@ class Address
      * @param array $province_ids [Option] Danh sách province_id cần lấy. (Mặc định: Lấy tất cả)
      * @description Lấy danh sách tỉnh, thành phố của Việt Nam (tùy chọn với danh sách $province_id)
      * @return array
-     * @throws Exception
      */
-    public static function getProvinces(array $province_ids = []) :array
+    public static function getProvinces(?array $province_ids = []): array
     {
         $provinces = ReadData::read(Constant::PATH_PROVINCES);
 
@@ -35,9 +32,8 @@ class Address
      * @param string $province_id
      * @description Lấy thông tin tỉnh thành phố bằng province_id
      * @return array
-     * @throws Exception
      */
-    public static function getProvince(string $province_id) :array
+    public static function getProvince(string $province_id): array
     {
         return static::getProvinces([$province_id])[$province_id] ?? [];
     }
@@ -46,9 +42,8 @@ class Address
      * @param string $province_id
      * @description Lấy danh sách quận huyện của một tỉnh thành phố bằng province_id
      * @return array
-     * @throws Exception
      */
-    public static function getDistrictsByProvinceId(string $province_id) :array
+    public static function getDistrictsByProvinceId(string $province_id): array
     {
         $district_path = Constant::PATH_DISTRICTS_FOLDER . "/$province_id.json";
         $districts = ReadData::read($district_path);
@@ -60,9 +55,8 @@ class Address
      * @param string $district_id
      * @description Lấy thông tin một quận huyện bằng district_id
      * @return array
-     * @throws Exception
      */
-    public static function getDistrict(string $district_id) :array
+    public static function getDistrict(string $district_id): array
     {
         $districts = ReadData::read(Constant::PATH_DISTRICTS);
         $district = $districts[$district_id] ?? [];
@@ -78,9 +72,8 @@ class Address
      * @param string $district_id
      * @description Lấy danh sách xã phường của một quận huyện bằng district_id
      * @return array
-     * @throws Exception
      */
-    public static function getWardsByDistrictId(string $district_id) :array
+    public static function getWardsByDistrictId(string $district_id): array
     {
         $ward_path = Constant::PATH_WARDS_FOLDER . "/$district_id.json";
         $wards = ReadData::read($ward_path);
@@ -93,9 +86,8 @@ class Address
      * @param string $ward_id
      * @description Lấy thông tin của một xã phường trong một quận huyện bằng district_id và ward_id
      * @return array
-     * @throws Exception
      */
-    public static function getWard(string $district_id, string $ward_id) :array
+    public static function getWard(string $district_id, string $ward_id): array
     {
         $wards = static::getWardsByDistrictId($district_id);
 
@@ -105,7 +97,7 @@ class Address
     /**
      * @param array $schema
      */
-    public static function setSchema(array $schema = []) :void
+    public static function setSchema(array $schema = []): void
     {
         static::$schema = $schema;
     }
@@ -113,7 +105,7 @@ class Address
     /**
      * @return array
      */
-    private static function getSchema() :array
+    private static function getSchema(): array
     {
         return static::$schema;
     }
@@ -122,7 +114,7 @@ class Address
      * @param array $data
      * @return array
      */
-    private static function applySchema(array $data) :array
+    private static function applySchema(array $data): array
     {
         if (!static::getSchema()) {
             return $data;
@@ -143,7 +135,7 @@ class Address
      * @param array $data
      * @return array
      */
-    private static function outputs(array $data) :array
+    private static function outputs(array $data): array
     {
         $result = array_map('static::applySchema', $data);
         static::setSchema([]);
@@ -155,7 +147,7 @@ class Address
      * @param array $data
      * @return array
      */
-    private static function output(array $data) :array
+    private static function output(array $data): array
     {
         $result = static::applySchema($data);
         static::setSchema([]);

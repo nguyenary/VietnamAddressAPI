@@ -6,7 +6,7 @@ define('DIST_DIR', ROOT . DS . 'src/data');
 define('EXCEL_FILES_DIR_NAME', 'excel_files');
 define('EXCEL_FILES_DIR', ROOT . DS . EXCEL_FILES_DIR_NAME);
 
-require 'vendor/autoload.php';
+require '../../autoload.php';
 
 function slug($string)
 {
