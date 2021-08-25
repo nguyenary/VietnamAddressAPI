@@ -6,7 +6,6 @@ Install vào dự án bằng `composer`
 composer require nguyenary/vietnam-address-api
 ```
 ## Usage
-<br>
 
 ### **1. Cách Tự Update Data Đơn Vị Hành Chính Việt Nam (*nếu có thay đổi*)**
 <br>
@@ -15,13 +14,13 @@ Nếu trong tương lai dữ liệu ***Đơn Vị Hành Chính Việt Nam*** có
 
 Dữ liệu được xuất từ các file `excel` tải từ địa chỉ: [https://danhmuchanhchinh.gso.gov.vn/](https://danhmuchanhchinh.gso.gov.vn)
 
-**Cách để tải file `excel` từ địa chỉ trên:**
+**Cách để tải file `excel` từ địa chỉ trên**
 
 ![Cách tải file excel](screenshot/screenshot_2.gif)
 
-**Cách để tải file `excel` tất cả các địa danh bằng `script`:**
+**Cách để tải file `excel` tất cả các địa danh bằng `script`**
 
-Hãy copy code trong file `download-script.js` truy cập vào địa chỉ trên. Nhấn `Ctrl + Shift + I` để mở `console` và paste đoạn code vào đây và kết quả sẽ như hình phía dưới.
+Hãy copy code trong file `download-script.js` và truy cập vào địa chỉ trên. Nhấn `Ctrl + Shift + I` để mở `console` và paste đoạn code vào đây rồi enter kết quả sẽ như hình.
 
 ![Cách tải file excel](screenshot/screenshot_1.gif)
 
@@ -82,4 +81,6 @@ Xem ví dụ cụ thể tham khảo file `example.php`
 > Định dạng lại các trường sẽ trả về. Gọi hàm này trước khi gọi các phương thức `get` ở trên (Mặc định sẽ trả về tất cả)
 - Option:
     - schema (array) : Mảng chứa danh sách các trường cần lấy (Vd: name, type, code,...v..v)
+<br>
+
 #### Project này có tái sử dụng code từ: [madnh/hanhchinhvn](https://github.com/madnh/hanhchinhvn)
