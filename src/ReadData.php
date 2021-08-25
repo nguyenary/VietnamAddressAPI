@@ -27,19 +27,12 @@ class ReadData
      */
     private static function jsonToArray(string $data) :array
     {
-        if (!static::isJson($data)) {
+        $data = json_decode($data, true);
+
+        if (!is_array($data) && (json_last_error() == JSON_ERROR_NONE)) {
             throw new Exception('Error read data file. Data not be JSON');
         }
 
-        return json_decode($data, true);
-    }
-
-    /**
-     * @param string $string
-     * @return bool
-     */
-    private static function isJson(string $string): bool
-    {
-        return is_array(json_decode($string, true)) && (json_last_error() == JSON_ERROR_NONE);
+        return $data;
     }
 }
