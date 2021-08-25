@@ -16,6 +16,8 @@ Dữ liệu được xuất từ các file `excel` tải từ địa chỉ: [htt
 
 **Cách để tải file `excel` từ địa chỉ trên**
 
+Ví dụ dưới đây là cách tải file `excel` đơn vị hành chính của thành phố Hà Nội
+
 ![Cách tải file excel](screenshot/screenshot_2.gif)
 
 **Cách để tải file `excel` tất cả các địa danh bằng `script`**
