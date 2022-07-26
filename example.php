@@ -11,7 +11,7 @@ print_r(Address::getProvinces());
 
 // Lấy danh sách tỉnh thành phố theo province_ids (province_id là key trong file src/data/province.json)
 // Chọn những trường muốn lấy bằng setSchema() mặc định sẽ lấy tất cả các trường
-// Lưu ý: Với những province_id bắt đầu bằng số 0 thì phải là dạng string, trường hợp khác có thể là string hoặc integer
+// Với những province_id bắt đầu bằng số 0 thì phải là dạng string, trường hợp khác có thể là string hoặc integer
 Address::setSchema(['name', 'type']);
 print_r(Address::getProvinces(['01', 87, 12]));
 
