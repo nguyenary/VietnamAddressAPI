@@ -1,5 +1,5 @@
 # Đơn Vị Hành Chính Việt Nam
-> Một thư viện được viết bằng PHP để lấy thông tin các đơn vị hành chính Việt Nam (Tỉnh, Thành Phố, Quận, Huyện, Xã, Phường, Thị Trấn...)
+> Thư viện được viết bằng PHP để lấy thông tin các đơn vị hành chính Việt Nam (Tỉnh, Thành Phố, Quận, Huyện, Xã, Phường, Thị Trấn...)
 ## Installation
 Install sử dụng `composer`
 ```properties
