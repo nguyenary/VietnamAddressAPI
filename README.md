@@ -7,7 +7,7 @@ composer require nguyenary/vietnam-address-api
 ```
 ## Usage
 
-### **1. Cách Tự Update Data Đơn Vị Hành Chính Việt Nam (*nếu có thay đổi*)**
+### **1. Cách Update Data Đơn Vị Hành Chính Việt Nam (*nếu có thay đổi*)**
 
 Nếu trong tương lai dữ liệu ***Đơn Vị Hành Chính Việt Nam*** có thay đổi thông tin (Quận, Huyện, Xã, Phường..v..v) bạn có thể chủ động update lại dữ liệu bằng cách dưới đây.
 
