@@ -8,7 +8,6 @@ composer require nguyenary/vietnam-address-api
 ## Usage
 
 ### **1. Cách Tự Update Data Đơn Vị Hành Chính Việt Nam (*nếu có thay đổi*)**
-<br>
 
 Nếu trong tương lai dữ liệu ***Đơn Vị Hành Chính Việt Nam*** có thay đổi thông tin (Quận, Huyện, Xã, Phường..v..v) bạn có thể chủ động update lại dữ liệu bằng cách dưới đây.
 
@@ -44,7 +43,7 @@ Vậy là bạn đã tự update lại dữ liệu Đơn Vị Hành Chính thàn
 <br>
 
 ### **2. Cách Sử Dụng Trong Dự Án**
-<br>
+
 
 ```php
 require 'vendor/autoload.php';
@@ -83,6 +82,5 @@ Xem ví dụ cụ thể tham khảo file `example.php`
 > Định dạng lại các trường sẽ trả về. Gọi hàm này trước khi gọi các phương thức `get` ở trên (Mặc định sẽ trả về tất cả)
 - Option:
     - schema (array) : Mảng chứa danh sách các trường cần lấy (Vd: name, type, code,...v..v)
-<br>
 
 #### Project này có tái sử dụng code từ: [madnh/hanhchinhvn](https://github.com/madnh/hanhchinhvn)
