@@ -13,7 +13,7 @@ Nếu trong tương lai dữ liệu ***Đơn Vị Hành Chính Việt Nam*** có
 
 Dữ liệu được xuất từ các file `excel` tải từ địa chỉ: [https://danhmuchanhchinh.gso.gov.vn/](https://danhmuchanhchinh.gso.gov.vn)
 
-**Cách để tải file `excel` từ địa chỉ trên**
+**Cách để tải file `excel`**
 
 Ví dụ dưới đây là cách tải file `excel` đơn vị hành chính của thành phố Hà Nội
 
@@ -37,7 +37,7 @@ Sẽ được kết quả như sau:
 ![Chạy lệnh php export.php](screenshot/screenshot_3.gif)
 
 Vậy là bạn đã tự update lại dữ liệu Đơn Vị Hành Chính thành công!
-<br><br>
+<br>
 >Hoặc bạn có thể tạo `issues` trong project để báo cáo vấn đề về dữ liệu đang gặp phải hoặc chủ động tạo `pull requests` để đóng góp bản cập nhật dữ liệu mới cho project này.
 
 <br>
