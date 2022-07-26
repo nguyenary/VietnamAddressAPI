@@ -1,7 +1,7 @@
 # Đơn Vị Hành Chính Việt Nam
 > Một thư viện được viết bằng PHP để lấy thông tin các đơn vị hành chính Việt Nam (Tỉnh, Thành Phố, Quận, Huyện, Xã, Phường, Thị Trấn...)
 ## Installation
-Install vào dự án bằng `composer`
+Install sử dụng `composer`
 ```properties
 composer require nguyenary/vietnam-address-api
 ```
