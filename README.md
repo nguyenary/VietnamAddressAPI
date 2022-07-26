@@ -37,7 +37,7 @@ Sẽ được kết quả như sau:
 ![Chạy lệnh php export.php](screenshot/screenshot_3.gif)
 
 Vậy là bạn đã tự update lại dữ liệu Đơn Vị Hành Chính thành công!
-<br><br>
+<br>
 >Hoặc bạn có thể tạo `issues` trong project để báo cáo vấn đề về dữ liệu đang gặp phải hoặc chủ động tạo `pull requests` để đóng góp bản cập nhật dữ liệu mới cho project này.
 
 <br>
