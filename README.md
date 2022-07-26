@@ -13,7 +13,7 @@ Nếu trong tương lai dữ liệu ***Đơn Vị Hành Chính Việt Nam*** có
 
 Dữ liệu được xuất từ các file `excel` tải từ địa chỉ: [https://danhmuchanhchinh.gso.gov.vn/](https://danhmuchanhchinh.gso.gov.vn)
 
-**Cách để tải file `excel` từ địa chỉ trên**
+**Cách để tải file `excel`**
 
 Ví dụ dưới đây là cách tải file `excel` đơn vị hành chính của thành phố Hà Nội
 
